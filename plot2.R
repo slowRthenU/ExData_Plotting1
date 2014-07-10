@@ -22,11 +22,12 @@ appData<- within(appData,{
 })
 
 ####################################
-# PRODUCE THE HISTOGRAM
+# Produce the line plot
 ####################################
-hist(appData$Global_active_power, col = "red"
-     , main = "Global Active Power", xlab = "Global Active Power (kilowatts)"
-     , ylab = "frequency")
-dev.copy(png, width = 480, height = 480, file = "plot1.png") # explicitly state width/height
+plot(x = appData$datetime, y = appData$Global_active_power
+     , type = "l", ylab = "Global Active Power (kilowatts)"
+     , xlab = "Weekday")
+dev.copy(png, width = 480, height = 480, file = "plot2.png") # explicitly state width/height
 dev.off()
+
 
