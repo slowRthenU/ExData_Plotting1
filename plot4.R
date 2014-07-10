@@ -27,7 +27,7 @@ appData<- within(appData,{
 ####################################
 par(mfrow=c(2,2), mar=c(3,4,1.5,1.5), oma=c(1,1,1,1), mai=c(0.6,0.6,0.1,0.1))
 plot(x = appData$datetime, y = appData$Global_active_power
-     , type = "l", ylab = "Global Active Power (kilowatts)"
+     , type = "l", ylab = "Global Active Power"
      , cex.lab = 0.5, xlab = '', cex.axis = 0.4, mgp = c(2, 1, 0))
 
 
