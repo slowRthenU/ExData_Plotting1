@@ -26,7 +26,7 @@ appData<- within(appData,{
 ####################################
 plot(x = appData$datetime, y = appData$Global_active_power
      , type = "l", ylab = "Global Active Power (kilowatts)"
-     , xlab = "Weekday")
+     , xlab = "")
 dev.copy(png, width = 480, height = 480, file = "plot2.png") # explicitly state width/height
 dev.off()
 

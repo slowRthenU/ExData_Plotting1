@@ -26,7 +26,7 @@ appData<- within(appData,{
 ####################################
 plot(x = appData$datetime, y = appData$Sub_metering_1
      , type = "l", ylab = "Energy sub metering"
-     , xlab = "Weekday")
+     , xlab = "")
 lines(x = appData$datetime, y = appData$Sub_metering_2, col = "red")
 lines(x = appData$datetime, y = appData$Sub_metering_3, col = "blue")
 l = legend(list(x = c(as.POSIXct("2007-02-02 12:45:00"), as.POSIXct("2007-02-02 23:59:00"))

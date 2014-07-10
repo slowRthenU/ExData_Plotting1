@@ -26,7 +26,7 @@ appData<- within(appData,{
 ####################################
 hist(appData$Global_active_power, col = "red"
      , main = "Global Active Power", xlab = "Global Active Power (kilowatts)"
-     , ylab = "frequency")
+     , ylab = "Frequency")
 dev.copy(png, width = 480, height = 480, file = "plot1.png") # explicitly state width/height
 dev.off()
 
